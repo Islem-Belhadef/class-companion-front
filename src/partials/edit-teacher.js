@@ -15,7 +15,7 @@ const EditTeacher = ({ setShowEditTeacher, userId, userName, userEmail,userDepar
 
     const handleEdit = (e) => {
         e.preventDefault()
-        Axios.post("http://localhost:3001/edit", {
+        Axios.post("https://real-plum-camel-gown.cyclic.app/edit", {
             type: "teacher",
             id: userId,
             email: newEmail,

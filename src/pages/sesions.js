@@ -35,7 +35,7 @@ const [sesionsList,setSesionList]=useState([]);
       setIsLoading(true);
       setTimeout(() => {
         if(localStorage.getItem("accountType")==="teacher"){
-          axios.post("http://localhost:3001/teacherSesions",{
+          axios.post("https://real-plum-camel-gown.cyclic.app/teacherSesions",{
             id:localStorage.getItem("token")
           })
           .then((res) => {
@@ -50,7 +50,7 @@ const [sesionsList,setSesionList]=useState([]);
             setIsLoading(false);
             console.log(err);
             setTimeout(() => {
-              Axios.get("http://localhost:3001/teacher")
+              Axios.get("https://real-plum-camel-gown.cyclic.app/teacher")
                 .then((res) => {
                   console.log(res.data);
                   setTeachersList(res.data);
@@ -65,7 +65,7 @@ const [sesionsList,setSesionList]=useState([]);
             }, 1000);
           });
         }else{
-          Axios.get("http://localhost:3001/sesions")
+          Axios.get("https://real-plum-camel-gown.cyclic.app/sesions")
           .then((res) => {
             console.log(res.data);
             setSesionList(res.data);

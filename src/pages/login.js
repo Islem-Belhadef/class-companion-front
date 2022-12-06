@@ -34,7 +34,7 @@ function Login() {
   const navigate = useNavigate();
 
   const login = () => {
-    Axios.post("http://localhost:3001/login", {
+    Axios.post("https://real-plum-camel-gown.cyclic.app/login", {
       user: user,
       password: password,
     })

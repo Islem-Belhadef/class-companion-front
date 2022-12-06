@@ -32,17 +32,17 @@ const Justifications = () =>{
       navigate("/login");
     } else {
       setIsLoading(true);
-      Axios.get("http://localhost:3001/students")
+      Axios.get("https://real-plum-camel-gown.cyclic.app/students")
         .then((res) => {
           console.log(res.data);
           setStudentsList(res.data);
        
-          Axios.get("http://localhost:3001/teachers")
+          Axios.get("https://real-plum-camel-gown.cyclic.app/teachers")
             .then((res) => {
               console.log(res.data);
               setTeachersList(res.data);
               setTimeout(() => {
-                Axios.get("http://localhost:3001/justifications")
+                Axios.get("https://real-plum-camel-gown.cyclic.app/justifications")
                   .then((res) => {
                     console.log(res.data);
                     setJustificationList(res.data);

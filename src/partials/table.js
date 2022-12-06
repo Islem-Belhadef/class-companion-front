@@ -28,7 +28,7 @@ const Table = ({ data, column,sesiondata }) => {
    
     const handleConfirm = (e) => {
         e.preventDefault()
-        Axios.post("http://localhost:3001/addabsences", { 
+        Axios.post("https://real-plum-camel-gown.cyclic.app/addabsences", { 
           time:time,
           date:date,
           class_name:sesiondata[0].class_name.split(" ")[0],

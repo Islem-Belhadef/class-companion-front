@@ -48,7 +48,7 @@ function Students() {
   };
 
   const handleSubmit = () => {
-    Axios.post("http://localhost:3001/signup", {
+    Axios.post("https://real-plum-camel-gown.cyclic.app/signup", {
       type: "student",
       firstName: firstName,
       lastName: lastName,
@@ -75,7 +75,7 @@ function Students() {
     } else {
       setIsLoading(true);
       setTimeout(() => {
-        Axios.get("http://localhost:3001/students")
+        Axios.get("https://real-plum-camel-gown.cyclic.app/students")
           .then((res) => {
             console.log(res.data);
             setStudentsList(res.data);

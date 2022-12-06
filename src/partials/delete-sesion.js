@@ -8,7 +8,7 @@ const DeleteSesion = ({setShowDeleteSesion ,sesionId, teacherId ,sesiondate, ses
     let navigate = useNavigate()
     
         const handleDelete = () => {
-            Axios.post("http://localhost:3001/deletesesion", {
+            Axios.post("https://real-plum-camel-gown.cyclic.app/deletesesion", {
               id: sesionId,
               teacherId:teacherId,
               date:sesiondate,

@@ -33,11 +33,11 @@ function MyAbsences() {
     } else {
       setIsLoading(true);
 
-      Axios.get("http://localhost:3001/teachers")
+      Axios.get("https://real-plum-camel-gown.cyclic.app/teachers")
         .then((res) => {
           setTeachersList(res.data);
           setTimeout(() => {
-            Axios.post("http://localhost:3001/absences", {
+            Axios.post("https://real-plum-camel-gown.cyclic.app/absences", {
               id: userId,
             })
               .then((res) => {

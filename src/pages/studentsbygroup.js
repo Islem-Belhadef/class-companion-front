@@ -36,7 +36,7 @@ function Studentsbygroup() {
     } else {
       setIsLoading(true);
       setTimeout(() => {
-        Axios.get("http://localhost:3001/studentsbyGroup")
+        Axios.get("https://real-plum-camel-gown.cyclic.app/studentsbyGroup")
           .then((res) => {
             console.log(res.data);
             setDataTable(res.data)

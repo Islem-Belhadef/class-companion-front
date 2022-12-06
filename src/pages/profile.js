@@ -32,7 +32,7 @@ function Profile() {
     if (!loggedIn) navigate("/login");
     else {
       setIsLoading(true);
-      Axios.post("http://localhost:3001/user", {
+      Axios.post("https://real-plum-camel-gown.cyclic.app/user", {
         type: window.localStorage.getItem("accountType"),
         id: window.localStorage.getItem("token"),
       })
@@ -57,7 +57,7 @@ function Profile() {
   };
 
   const handleEdit = () => {
-    Axios.post("http://localhost:3001/edit", {
+    Axios.post("https://real-plum-camel-gown.cyclic.app/edit", {
       type: window.localStorage.getItem("accountType"),
       id: user._id,
       email: newEmail,
