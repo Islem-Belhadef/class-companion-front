@@ -1,0 +1,25 @@
+.error-page {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-illustration {
+  width: 45%;
+}
+
+.error-page h1 {
+  font-weight: 600;
+}
+
+.error-page p {
+  font-weight: 400;
+}
+
+.error-page .main-btn {
+  margin: 6vh 0;
+}
