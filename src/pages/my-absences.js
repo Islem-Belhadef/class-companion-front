@@ -33,11 +33,11 @@ function MyAbsences() {
     } else {
       setIsLoading(true);
 
-      Axios.get("https://real-plum-camel-gown.cyclic.app/teachers")
+      Axios.get("https://class-companion.cyclic.app/teachers")
         .then((res) => {
           setTeachersList(res.data);
           setTimeout(() => {
-            Axios.post("https://real-plum-camel-gown.cyclic.app/absences", {
+            Axios.post("https://class-companion.cyclic.app/absences", {
               id: userId,
             })
               .then((res) => {

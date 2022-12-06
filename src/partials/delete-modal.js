@@ -8,7 +8,7 @@ const Deletemodal = ({ setShowDeleteModal, type, userId, userName }) => {
 
   const handleDelete = () => {
     axios
-      .post("https://real-plum-camel-gown.cyclic.app/delete", {
+      .post("https://class-companion.cyclic.app/delete", {
         type: type,
         id: userId,
       })

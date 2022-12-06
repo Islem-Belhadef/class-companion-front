@@ -41,7 +41,7 @@ function Home() {
       navigate("/login");
     } else {
       if (accountType === "student") {
-        Axios.post("https://real-plum-camel-gown.cyclic.app/absences", {
+        Axios.post("https://class-companion.cyclic.app/absences", {
           id: userId,
         })
           .then((res) => {

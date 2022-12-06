@@ -22,7 +22,7 @@ const EditStudent = ({
   const handleEdit = (e) => {
     e.preventDefault();
     axios
-      .post("https://real-plum-camel-gown.cyclic.app/edit", {
+      .post("https://class-companion.cyclic.app/edit", {
         type: "student",
         id: userId,
         email: newEmail,

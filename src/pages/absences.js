@@ -30,17 +30,17 @@ function Absences() {
       navigate("/login");
     } else {
       setIsLoading(true);
-      Axios.get("https://real-plum-camel-gown.cyclic.app/students")
+      Axios.get("https://class-companion.cyclic.app/students")
         .then((res) => {
           console.log(res.data);
           setStudentsList(res.data);
        
-          Axios.get("https://real-plum-camel-gown.cyclic.app/teachers")
+          Axios.get("https://class-companion.cyclic.app/teachers")
             .then((res) => {
               console.log(res.data);
               setTeachersList(res.data);
               setTimeout(() => {
-                Axios.get("https://real-plum-camel-gown.cyclic.app/absences")
+                Axios.get("https://class-companion.cyclic.app/absences")
                   .then((res) => {
                     console.log(res.data);
                     setAbsencesList(res.data);

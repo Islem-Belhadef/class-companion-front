@@ -5,7 +5,7 @@ import Axios from "axios";
 
 const NewSesion = ({ setShowAddSesion }) => {
   useEffect(() => {
-    Axios.post("https://real-plum-camel-gown.cyclic.app/modules", {
+    Axios.post("https://class-companion.cyclic.app/modules", {
       id: window.localStorage.getItem("token"),
     }).then((res) => {
       setModulesList(res.data);
@@ -25,7 +25,7 @@ const NewSesion = ({ setShowAddSesion }) => {
 
   const handleCreate = (e) => {
     e.preventDefault();
-    Axios.post("https://real-plum-camel-gown.cyclic.app/addsesion", {
+    Axios.post("https://class-companion.cyclic.app/addsesion", {
       teacher_id: window.localStorage.getItem("token"),
       sesiondate: newDate,
       sesiontime: Time,

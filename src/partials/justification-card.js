@@ -10,7 +10,7 @@ const JustificationCard = (props) => {
   const [isJustified, SetIsJustified] = useState();
 
   useEffect(() => {
-    Axios.get(`https://real-plum-camel-gown.cyclic.app/absence/${justification.absence_id}`)
+    Axios.get(`https://class-companion.cyclic.app/absence/${justification.absence_id}`)
       .then((res) => {
         console.log(res.data);
         setAbsenceInfo(res.data);
@@ -23,7 +23,7 @@ const JustificationCard = (props) => {
 
   const handleAccept = (e) => {
     e.preventDefault();
-    Axios.post("https://real-plum-camel-gown.cyclic.app/editAbsenceType", {
+    Axios.post("https://class-companion.cyclic.app/editAbsenceType", {
       id: justification.absence_id,
       justified: true,
     })

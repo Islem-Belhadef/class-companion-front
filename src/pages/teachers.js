@@ -47,7 +47,7 @@ function Teachers() {
   };
 
   const handleSubmit = () => {
-    Axios.post("https://real-plum-camel-gown.cyclic.app/signup", {
+    Axios.post("https://class-companion.cyclic.app/signup", {
       teacherCode: "12345679",
       type: "teacher",
       firstName: firstName,
@@ -75,7 +75,7 @@ function Teachers() {
       setIsLoading(true);
 
       setTimeout(() => {
-        Axios.get("https://real-plum-camel-gown.cyclic.app/teachers")
+        Axios.get("https://class-companion.cyclic.app/teachers")
           .then((res) => {
             console.log(res.data);
             setTeachersList(res.data);

@@ -12,7 +12,7 @@ const JustifyModal = (props) => {
   const [justificationLink, setJustificationLink] = useState("");
 
   const handleJustify = () => {
-    Axios.post("https://real-plum-camel-gown.cyclic.app/justification", {
+    Axios.post("https://class-companion.cyclic.app/justification", {
       link: justificationLink,
       absence_id: absence._id,
     })

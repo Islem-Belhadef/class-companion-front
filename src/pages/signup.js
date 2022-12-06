@@ -82,7 +82,7 @@ function Signup() {
   };
 
   const signup = () => {
-    Axios.post("https://real-plum-camel-gown.cyclic.app/signup", {
+    Axios.post("https://class-companion.cyclic.app/signup", {
       type: type,
       firstName: firstName,
       lastName: lastName,
